@@ -1,6 +1,22 @@
-# Seminario de Revisión de APIs
+| ![Isaac Zainea](https://raw.githubusercontent.com/Izainea/Izainea.github.io/master/logo.png) | Seminario de programación MINE | Isaac Zainea |
+|:---:|:---------------------------------------------------------------------------:|:---:|
+---
 
-Bienvenidos al repositorio del Seminario de Revisión de APIs. Este repositorio está diseñado como un recurso educativo integral para entender y trabajar con diferentes tipos de APIs.
+# Seminario de programación
+
+![GitHub repo size](https://img.shields.io/github/repo-size/Izainea/api_review)
+![GitHub contributors](https://img.shields.io/github/contributors/Izainea/api_review)
+![GitHub stars](https://img.shields.io/github/stars/Izainea/api_review?style=social)
+
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)
+![FastAPI 0.68.1](https://img.shields.io/badge/fastapi-0.68.1-blue.svg)
+![uvicorn 0.15.0](https://img.shields.io/badge/uvicorn-0.15.0-blue.svg)
+
+![GitHub forks](https://img.shields.io/github/forks/Izainea/api_review?style=social)
+**Revisión de APIs**
+
+
+Bienvenidos al repositorio del Seminario para la Revisión de APIs. Este repositorio está diseñado como un recurso educativo integral para entender y trabajar con diferentes tipos de APIs.
 
 ## Contenido del Repositorio
 
