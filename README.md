@@ -7,19 +7,8 @@ Bienvenidos al repositorio del Seminario de Revisión de APIs. Este repositorio 
 ### Introducción
 - Conceptos básicos de las APIs.
 - Importancia y usos generales de las APIs.
-
-### Tipos_de_APIs
-- Diferencias entre APIs Públicas y Privadas.
-- Características y ejemplos de APIs Web.
-
-### RESTful_APIs
 - Fundamentos de las APIs RESTful.
 - Detalle de los métodos HTTP: GET, POST, PUT/PATCH, DELETE.
-
-### Formatos_de_Datos
-- Uso y ejemplos de JSON y XML en APIs.
-
-### Autenticacion_y_Seguridad
 - Métodos de autenticación comunes en APIs.
 - Consideraciones clave de seguridad.
 
@@ -30,16 +19,11 @@ Bienvenidos al repositorio del Seminario de Revisión de APIs. Este repositorio 
 ### Demostraciones_Practicas
 - Tutoriales y guías paso a paso para consumir APIs públicas.
 
-### Buenas_Practicas_y_Limites
-- Mejores prácticas en el diseño y uso de APIs.
-- Gestión de límites y cuotas en el consumo de APIs.
+### Creacion de APIs con FastAPI
 
-### Herramientas_de_Desarrollo
-- Herramientas y utilidades para el desarrollo y prueba de APIs.
+- Creación de una API Restful con FastAPI
+- Consulta de datos de una base de datos con FastAPI
 
-### Tendencias_y_Futuro
-- Discusión sobre las tendencias actuales en APIs.
-- Perspectivas sobre el futuro de las APIs.
 
 ## Cómo Contribuir
 
