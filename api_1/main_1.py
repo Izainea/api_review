@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
 import joblib
-
+import pandas as pd
 
 app = FastAPI()
 
@@ -16,8 +16,10 @@ def read_item(item_id: int,num_id:str ,q: str = None):
 @app.post("/adults_model/")
 def create_item(adults: dict):
     pipeline=joblib.load('pipeline_total.gz')
-    prediction=pipeline.predict([adults])
-    return {"prediction": prediction[0]}
+    DF=pd.DataFrame([adults])
+    prediction=pipeline.predict_proba(DF)
+    result=float(prediction[0][1])
+    return {"prediction": result}
 
 
 
