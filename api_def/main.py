@@ -55,6 +55,8 @@ async def get_all_data():
     return df.to_dict(orient="records")
 
 
+
+
 ### Terminamos de definir la API
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
