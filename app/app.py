@@ -21,7 +21,6 @@ st.title("Consulta de API para Modelo de Adultos")
 with st.form("api_form"):
     age = st.number_input("Edad", min_value=1, value=21)
     workclass = st.selectbox("Clase de trabajo", ["Private", "Self-emp-not-inc", "Self-emp-inc", "Federal-gov", "Local-gov", "State-gov", "Without-pay", "Never-worked"])
-    fnlwgt = st.number_input("fnlwgt", value=346478)
     education = st.selectbox("Educación", ["Bachelors", "Some-college", "11th", "HS-grad", "Prof-school", "Assoc-acdm", "Assoc-voc", "9th", "7th-8th", "12th", "Masters", "1st-4th", "10th", "Doctorate", "5th-6th", "Preschool"])
     education_num = st.number_input("Número de educación", min_value=1, max_value=16, value=10)
     marital_status = st.selectbox("Estado civil", ["Married-civ-spouse", "Divorced", "Never-married", "Separated", "Widowed", "Married-spouse-absent", "Married-AF-spouse"])
@@ -36,25 +35,25 @@ with st.form("api_form"):
 
     submitted = st.form_submit_button("Enviar")
 
+
     if submitted:
         datos_json = {
             'age': age,
             'workclass': workclass,
-            'fnlwgt': fnlwgt,
             'education': education,
-            'education-num': education_num,
-            'marital-status': marital_status,
+            'education_num': education_num,
+            'marital_status': marital_status,
             'occupation': occupation,
             'relationship': relationship,
             'race': race,
             'sex': sex,
-            'capital-gain': capital_gain,
-            'capital-loss': capital_loss,
-            'hours-per-week': hours_per_week,
-            'native-country': native_country
+            'capital_gain': capital_gain,
+            'capital_loss': capital_loss,
+            'hours_per_week': hours_per_week,
+            'native_country': native_country
         }
 
-        url = 'http://127.0.0.1:8000/adults_model/'
+        url = "http://127.0.0.1:8000/predict"
 
         exito, respuesta = realizar_solicitud_post(url, datos_json)
 
