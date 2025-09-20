@@ -15,8 +15,11 @@ def read_item(item_id: int,num_id:str ,q: str = None):
 
 @app.post("/adults_model/")
 def create_item(adults: dict):
-    pipeline=joblib.load('pipeline_total.gz')
+    pipeline=joblib.load('Cuadernos/pipeline.pkl')
+    print(adults)
+    print(pipeline)
     DF=pd.DataFrame([adults])
+    print(DF)
     prediction=pipeline.predict_proba(DF)
     result=float(prediction[0][1])
     return {"prediction": result}
